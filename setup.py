@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="django-fragment-cache",
-    version="0.1",
+    version="0.5",
     author="hongweipeng",
     author_email="",
     description="add douyin effect to image",
