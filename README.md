@@ -23,7 +23,7 @@ pip install django-fragment-cache
 Install Requires:
 - django >= 2
 
-edit your settings.py to add `` to your `NSTALLED_APPS`.
+edit your settings.py to add `fragment_cache` to your `NSTALLED_APPS`.
 ```
 INSTALLED_APPS = (
     ...
@@ -34,11 +34,14 @@ INSTALLED_APPS = (
 
 ### Use
 you need provide a callable object to tell module how to get data, and the function return a dict.
+
+**only call function when cache expires.**
+
 ```
 import time
 def get_data(num=10):
     time.sleep(3)
-    return {'nums': list(range(num)}
+    return {'nums': list(range(num))}
 
 def test(request):
     return render(request, 'test.html', {'get_data': get_data})

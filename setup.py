@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="django-fragment-cache",
-    version="0.5",
+    version="0.5.1",
     author="hongweipeng",
     author_email="",
-    description="add douyin effect to image",
+    description="a tag for improving django template fragment cache",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hongweipeng/django-fragment-cache",
